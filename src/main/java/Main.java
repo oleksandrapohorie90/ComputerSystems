@@ -9,5 +9,10 @@ public class Main {
 
         Triangle triangle = new Triangle();
         triangle.calculateTriangleArea(2,2);
+        triangle.calculateTrianglePerimeter(3,5,5);
+
+        Square square = new Square();
+        square.calculateSquareArea(3);
+        square.calculateSquarePerimeter(4);
     }
 }
