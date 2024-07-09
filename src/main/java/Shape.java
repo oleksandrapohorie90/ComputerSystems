@@ -1,10 +1,10 @@
 public interface Shape {
 
-    int calculateCircleArea();
-    int calculateCirclePerimeter();
-    int calculateTriangleArea();
-    int calculateTrianglePerimeter();
-    int calculateSquareArea();
-    int calculateSquarePerimeter();
+    void calculateCircleArea();
+    void calculateCirclePerimeter();
+    void calculateTriangleArea();
+    void calculateTrianglePerimeter();
+    void calculateSquareArea();
+    void calculateSquarePerimeter();
 
 }
