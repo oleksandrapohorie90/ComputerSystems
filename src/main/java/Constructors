@@ -1,0 +1,7 @@
+=> not a special type of method, used to initialize objects, doesnt have return type.
+Default constructor - no arguments, if you don't create any, it will be generated automatically.
+
+abstract - the implementation is somewhere else
+abstract class - dont use to create objects
+
+

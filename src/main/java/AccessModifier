@@ -1,0 +1,7 @@
+private - only the same class access, within the class
+protected - within the package, but with inheritance outside of package too
+default - access only within the same package, anything inside that package can access each other
+public - in all classes,packages
+
+getter method returns the var - .getNumber()
+setter method sets to a new var - .setBreed()
