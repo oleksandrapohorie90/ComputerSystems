@@ -28,7 +28,7 @@ public class CheckingAccount extends BankAccount {
     void withdrawal(int amount) {
         int newBalance;
 
-        if (amount >= getBalance()) {
+        if (amount > getBalance()) {
             newBalance = getBalance() - amount - insufficient_funds_fee;
         } else {
             newBalance = getBalance() - amount;
