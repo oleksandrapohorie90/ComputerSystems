@@ -1,3 +1,3 @@
-public class Square extends Shape {
+public class Square extends Animal.Shape {
 
 }
