@@ -6,9 +6,9 @@ public abstract class BankAccount {
     String account_type;
     int balance;
 
-    abstract int deposit();
+    abstract void deposit(int amount);
 
-    abstract int withdrawal();
+    abstract void withdrawal(int amount);
 
     public BankAccount(String account_type, String customer_name, int balance) {
         this.account_type = account_type;
