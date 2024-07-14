@@ -1,13 +1,13 @@
 package MarketPlace;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Seller extends Person {
     private List<Product> products;
 
     public Seller() {
+        this.products = new ArrayList<>();
     }
 
     public Seller(String name, String email) {
