@@ -2,17 +2,22 @@ package Advanced_OOP;
 
 public class SavingsAccount extends BankAccount {
 
-    private final double savings_interest_rate = 4.5;
+     private double interest_rate;
 
-    public SavingsAccount(String account_type, String customer_name, int balance) {
+    public SavingsAccount(String account_type, String customer_name, int balance, int interest_rate) {
         super(account_type, customer_name, balance);
+        this.interest_rate = interest_rate;
     }
 
-    private void interest_rate(int amountOfInterest){
-
+    public double getInterest_rate() {
+        return interest_rate;
     }
 
-    void calculate_interest(int amount){
+    public void setInterest_rate(double interest_rate) {
+        this.interest_rate = interest_rate;
+    }
+
+    void calculate_interest(int amount) {
 
     }
 

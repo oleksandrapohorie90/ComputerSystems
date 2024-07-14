@@ -2,9 +2,9 @@ package Advanced_OOP;
 
 public abstract class BankAccount {
 
-    String customer_name;
-    String account_type;
-    int balance;
+    private String customer_name;
+    private String account_type;
+    private int balance;
 
     abstract void deposit(int amount);
 
