@@ -1,4 +1,4 @@
 package MarketPlace;
 
-public class Products {
+public class Buyer {
 }
