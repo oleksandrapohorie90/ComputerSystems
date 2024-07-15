@@ -24,7 +24,7 @@ public class Buyer extends Person {
     public void displayPurchasedProducts() {
         System.out.println("Purchased Products from Buyer " + getName() + ":");
         for (Product product : purchasedProducts) {
-            System.out.println("This is product: " + product);
+            System.out.println(product);
         }
     }
 

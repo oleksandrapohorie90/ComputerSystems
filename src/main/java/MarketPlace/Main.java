@@ -14,8 +14,21 @@ public class Main {
         marketplace.addSeller(seller1);
         marketplace.addSeller(seller2);
 
+        marketplace.addBuyer(buyer1);
+        marketplace.addBuyer(buyer2);
+
         Product product1 = new Product("Monitor", 350);
         Product product2 = new Product("Keyboard", 75);
         Product product3 = new Product("Mouse", 15);
+
+        seller1.addProduct(product3);
+        seller2.addProduct(product2);
+        seller2.addProduct(product1);
+
+        buyer1.buyProduct(product1);
+        buyer2.buyProduct(product3);
+
+        marketplace.displayAllSellers();
+        marketplace.displayAllBuyers();
     }
 }
