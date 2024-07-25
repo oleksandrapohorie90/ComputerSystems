@@ -1,4 +1,6 @@
-public class Dog extends Animal{
+package OOP;
+
+public class Dog extends Animal {
     String breed;
     int age;
     String color;
@@ -11,7 +13,7 @@ public class Dog extends Animal{
     }
 
     public void printDetails(){
-        System.out.println("Dog details: ");
+        System.out.println("OOP.Dog details: ");
         System.out.println(this.breed);
         System.out.println(this.age);
         System.out.println(this.color);
