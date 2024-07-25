@@ -1,6 +1,6 @@
 package Advanced_OOP;
 
-public abstract class CheckingAccount extends BankAccount {
+public class CheckingAccount extends BankAccount {
 
     private double insufficient_funds_fee;
 
