@@ -2,7 +2,7 @@ package Advanced_OOP;
 
 public abstract class BankAccount implements Account {
 
-    private int balance;
+    private double balance;
     protected String password;
 
     //parameterized constructor
@@ -37,11 +37,11 @@ public abstract class BankAccount implements Account {
     }
 
     //Getter and Setter methods
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
@@ -53,5 +53,15 @@ public abstract class BankAccount implements Account {
         } else {
             System.out.println("Please re-enter the current password!");
         }
+    }
+
+    public abstract void withdrawal(int amount);
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "balance=" + balance +
+                ", password='" + password + '\'' +
+                '}';
     }
 }

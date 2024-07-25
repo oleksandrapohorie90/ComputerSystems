@@ -1,6 +1,6 @@
 package Advanced_OOP;
 
-public class Main {
+public class Bank {
     public static void main(String[] args) {
 
         BankAccount savingsAccount = new SavingsAccount("Savings account", "John Brown", 100000, 4.2);
