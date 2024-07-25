@@ -5,23 +5,24 @@ public class Bank {
 
         User customer = new User("Alex");
 
+        //polymorphism
+        BankAccount bankAccount = new CheckingAccount("122334", 5000, 29);
+
         Account savingsAcc = new SavingsAccount("9876", 100000, 4.7);
         Account checkingAcc = new CheckingAccount("54321", 10000, 45);
 
+        customer.openAccount(savingsAcc);
+        customer.openAccount(checkingAcc);
 
-        BankAccount savingsAccount = new SavingsAccount("Savings account", "John Brown", 100000, 4.2);
-        System.out.println("Initial savings account details are: \n" + savingsAccount.getCustomer_name() + "\n" + savingsAccount.getAccount_type() + "\n" +
-                savingsAccount.getBalance());
+        System.out.print("All Customer " + customer.getCustomer_name() + " accounts: " + customer.getAccountsType());
+        customer.displayAllAccountTypes();
 
-        BankAccount checkingAccount = new CheckingAccount("Checking account", "Olive Johns", 100050, 24);
+        savingsAcc.deposit(1000);
+        System.out.println("Balance after deposit on the Savings account: " + savingsAcc.getBalance());
 
-        checkingAccount.withdrawal(500);
-        System.out.println("Current balance after withdrawal is: "+ checkingAccount.getBalance());
+        checkingAcc.withdraw(500);
+        System.out.println("Balance after withdrawal on the Checking account: " + savingsAcc.getBalance());
+        checkingAcc.changePassword("123444", "78uu89s");
 
-        savingsAccount.deposit(1000);
-        System.out.println("Balance after deposit: "+ savingsAccount.getBalance());
-
-        SavingsAccount savings = (SavingsAccount) savingsAccount;
-        savings.calculate_interest();
     }
 }

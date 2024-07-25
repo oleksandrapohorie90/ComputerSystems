@@ -9,7 +9,8 @@ public class CheckingAccount extends BankAccount {
         this.insufficient_funds_fee = insufficient_funds_fee;
     }
 
-    private void process_deposit(int amount) {
+    @Override
+    public void deposit(double amount){
         double newBalance = getBalance() + amount;
         //updating a balance
         setBalance(newBalance);
@@ -17,7 +18,7 @@ public class CheckingAccount extends BankAccount {
     }
 
     @Override
-    public void withdrawal(int amount) {
+    public void withdraw(double amount) {
         double newBalance;
         if (amount > getBalance()) {
             newBalance = getBalance() - amount - insufficient_funds_fee;

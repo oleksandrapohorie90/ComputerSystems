@@ -55,8 +55,6 @@ public abstract class BankAccount implements Account {
         }
     }
 
-    public abstract void withdrawal(int amount);
-
     @Override
     public String toString() {
         return "BankAccount{" +
@@ -64,4 +62,5 @@ public abstract class BankAccount implements Account {
                 ", password='" + password + '\'' +
                 '}';
     }
+
 }
