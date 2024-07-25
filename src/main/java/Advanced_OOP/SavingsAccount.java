@@ -4,8 +4,8 @@ public class SavingsAccount extends BankAccount {
 
     private double interest_rate;
 
-    public SavingsAccount(String account_type, String customer_name, int balance, double interest_rate) {
-        super(account_type, customer_name, balance);
+    public SavingsAccount(String password, int balance, double interest_rate) {
+        super(password, balance); //calling parent constructor first
         this.interest_rate = interest_rate;
     }
 
@@ -42,4 +42,5 @@ public class SavingsAccount extends BankAccount {
             System.out.println("Insufficient balance.");
         }
     }
+
 }

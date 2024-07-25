@@ -2,6 +2,8 @@ package Advanced_OOP;
 
 public class User {
 
+    private String customer_name;
+
     public void openAccount(BankAccount account){
 
     }
