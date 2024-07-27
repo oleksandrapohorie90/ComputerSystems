@@ -1,6 +1,6 @@
 package MarketPlace;
 
-public class Product {
+public class Product extends Marketplace{
 
     private String typeOfProduct;
     private double price;
