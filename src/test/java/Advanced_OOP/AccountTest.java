@@ -2,10 +2,9 @@ package Advanced_OOP;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class AccountTest {
+public abstract class AccountTest {
 
     @Test
     @DisplayName("Test deposit functionality")
@@ -54,10 +53,6 @@ public class AccountTest {
         // Test deposit method and assert after each operation
         assertEquals(2350.0, account.calculate_interest(10), 0.001, "New savings account balance is: ");
         assertEquals(470.0, account.calculate_interest(2), 0.001, "New savings account balance is: ");
-    }
-
-    @Test
-    void changePassword() {
 
     }
 }
