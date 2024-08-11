@@ -1,5 +1,8 @@
 package Advanced_OOP;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class SavingsAccount extends BankAccount {
 
     private double interest_rate;
@@ -9,9 +12,12 @@ public class SavingsAccount extends BankAccount {
         this.interest_rate = interest_rate;
     }
 
-    void calculate_interest() {
-        double interest_amount = getBalance() * (interest_rate / 100) * 1;
-        System.out.println("Your end interest amount after a year is: " + interest_amount);
+    public double calculate_interest(int years) {
+        double interest_amount = (getBalance() * (interest_rate / 100) * years);
+        BigDecimal roundedAmount = new BigDecimal(interest_amount).setScale(2, RoundingMode.HALF_UP);
+        double roundedInterestAmount = roundedAmount.doubleValue();
+        System.out.println("Your end interest amount after "+years+" year/s is: " + roundedInterestAmount);
+        return roundedInterestAmount;
     }
 
 }
