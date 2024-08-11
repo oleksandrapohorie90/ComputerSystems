@@ -4,6 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertAll;
 
+
 public class CalculatorTest {
 
     @Test
@@ -22,4 +23,5 @@ public class CalculatorTest {
     public void add() {
         assertEquals(4.0, Calculator.add(2, 2), 0.0001);
     }
+
 }
