@@ -5,10 +5,12 @@ public class Child extends Person {
     Person parent;
     public Child(String name, int age, Person parent) {
         super(name, age); //call parent constructor
+        this.parent = parent;
     }
 
-    public Child(Person anotherPerson) {
-        super(anotherPerson);
+    public Child(Child anotherChild) {
+        super(anotherChild);
+        this.parent = anotherChild.parent;
     }
 
     public void printParent() {
