@@ -11,5 +11,7 @@ public class Main {
 
         Child myChild = new Child("Baby", 2, new Person("newParent", 30));
         myChild.printParent();
+        myChild.printParent("more");
+        alex.printParent();
     }
 }

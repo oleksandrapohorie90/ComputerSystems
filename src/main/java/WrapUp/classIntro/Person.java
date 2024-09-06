@@ -2,6 +2,8 @@ package WrapUp.classIntro;
 
 public class Person {
     //CTRL RETURN - to create a new class
+    //static polymorphism
+    //dynamic polymorphism
     private String name;
     private int age;
 
@@ -31,5 +33,9 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void printParent(){
+        System.out.println("Oh no parent found!");
     }
 }

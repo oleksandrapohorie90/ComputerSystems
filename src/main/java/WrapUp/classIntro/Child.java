@@ -3,6 +3,7 @@ package WrapUp.classIntro;
 public class Child extends Person {
     //Person parent = new Person("Parent", 22); -> not good since all children will have the same parent
     Person parent;
+
     public Child(String name, int age, Person parent) {
         super(name, age); //call parent constructor
         this.parent = parent;
@@ -15,5 +16,10 @@ public class Child extends Person {
 
     public void printParent() {
         System.out.println(parent.getName());
+    }
+
+    //overloading - polymorphism
+    public void printParent(String extraText) {
+        System.out.println(parent.getName() + " " + extraText);
     }
 }
