@@ -1,0 +1,8 @@
+create a folder
+create a file
+check where are you
+install
+
+to change smth in the file: sed -i '' 's/Hello/Hi/g' example.txt
+java --version
+kill terminal to clean
