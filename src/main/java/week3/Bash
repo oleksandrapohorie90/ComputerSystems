@@ -1,0 +1,8 @@
+commands are in bash
+shibank - this line
+
+scripts starts with #!/usr/bin/env bash <- this is my bash script, run it as bash
+
+Basics
+=================
+echo "Hello world"
