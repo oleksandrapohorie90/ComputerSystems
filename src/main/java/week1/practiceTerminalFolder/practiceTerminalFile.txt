@@ -27,3 +27,11 @@ echo {a..q}
 echo "Whats your name?"
 read my_name_variable #will wait for me to pur smth in console, like Scanner
 echo "Your name is ${my_name_variable}"
+
+if [[ $my_name_variable == $USER ]]; then
+    if [[ num_of_companies > 10 ]]; then
+      echo "You're the logged in user"
+    fi
+else
+    echo "You're not logged in user"
+fi
