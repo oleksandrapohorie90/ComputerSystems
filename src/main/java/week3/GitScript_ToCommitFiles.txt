@@ -1,0 +1,30 @@
+#!/bin/bash
+WATCH_DIR="/Users/alexasky111/IdeaProjects/ComputerSystems"
+cd "$WATCH_DIR" || exit 1
+
+current_files=($(ls))
+
+echo "Alex is watching directory $WATCH_DIR for new files..."
+
+while true; do
+    # Store the new list of files in the directory
+    new_files=($(ls))
+
+    # Loop over new files to check if there are any files not in current_files
+    for file in "${new_files[@]}"; do
+        if [[ ! " ${current_files[@]} " =~ " $file " ]]; then
+            echo "New file detected: $file"
+
+# Add, commit, and push the new file
+            git add "$file"
+            git commit -m "Add new file: $file"
+            git push origin main  # change branch if needed
+
+            # Update the current_files array
+            current_files+=("$file")
+        fi
+    done
+
+    # Pause briefly before checking again
+    sleep 10
+done
