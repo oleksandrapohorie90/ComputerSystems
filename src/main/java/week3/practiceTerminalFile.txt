@@ -24,6 +24,13 @@ echo "The first argument: $1"
 echo {1..10} #prints from 1 to 10
 echo {a..q}
 
+function numberPrinter(){
+  for i in {1..$1}; do
+      echo "$i"
+  done
+}
+numberPrinter $1
+
 echo "Whats your name?"
 read my_name_variable #will wait for me to pur smth in console, like Scanner
 echo "Your name is ${my_name_variable}"
