@@ -1,4 +1,15 @@
-Alex is typing in the IDE terminal updated
-added this
-www.stackoverflow.com
 #!/bin/bash
+echo "Hello world" : echo "Again me"
+num_of_companies=15 #if you have spaces bash practiceTerminalFile.txt will throw an error command not found
+echo "${num_of_companies}"
+#ping www.google.com
+
+my_string="A very long string"
+my_length=8
+echo "${my_string:0:my_length}"  #start from 0 to 7 inclusive, no rest
+echo "${#my_string}" #will give 18 characters, its a command and wont be passed anyway
+
+my_array=(one two three)
+echo "The first item in my array: ${my_array[0]}" #only prints the 1st element-one
+echo "My array has all these: ${my_array[@]}" #will print all the elements
+echo "The length of array is ${#my_array[@]}"

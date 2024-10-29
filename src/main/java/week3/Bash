@@ -6,3 +6,6 @@ scripts starts with #!/usr/bin/env bash <- this is my bash script, run it as bas
 Basics
 =================
 echo "Hello world"
+
+to run paste:
+bash practiceTerminalFile.txt
