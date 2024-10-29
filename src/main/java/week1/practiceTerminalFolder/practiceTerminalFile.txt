@@ -13,3 +13,13 @@ my_array=(one two three)
 echo "The first item in my array: ${my_array[0]}" #only prints the 1st element-one
 echo "My array has all these: ${my_array[@]}" #will print all the elements
 echo "The length of array is ${#my_array[@]}"
+
+for i in "${my_array[@]}"; do
+    echo "$i"    #this will print the value of i
+done
+
+echo "All arguments passed into this script: $@"
+echo "The first argument: $1"
+
+echo {1..10} #prints from 1 to 10
+echo {a..q}
