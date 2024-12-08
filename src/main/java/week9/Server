@@ -1,0 +1,9 @@
+import socket
+s = socket.socket()
+print ("Socket success created")
+
+s.blind(('',port))
+print("socket binded to %s" %(port))
+
+s.listen(5)
+print("")
