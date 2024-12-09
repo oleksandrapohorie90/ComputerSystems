@@ -1,5 +1,6 @@
 // In src/index.js
 const express = require("express");
+const v1Router = require("./v1/routes");
 //we instantiated and have whole application below
 const app = express();
 const PORT = process.env.PORT || 3000; // accessing specific port on my comp, default port number is -3000
@@ -14,3 +15,5 @@ app.listen(PORT, () => {
 });
 
 //nodemon make sure app starts with index.js
+//ver 1 api can be different from ver 2
+//router important to segregate your code and to send people
